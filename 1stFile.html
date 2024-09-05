@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Student_view</title>
+    <style>
+        table, tb {
+            margin-left:auto; 
+            margin-right:auto;
+            font-size: 18px;
+        }
+
+        input[type=text], [type=file], [type=password] {  
+            width: 100%;
+            padding: 12px 20px;
+            margin: 0px 10px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #div1 {
+            color: black;
+            text-align: center;
+            float: left;
+            margin-left: 150px;
+        }
+
+        #div2 {
+            margin-left: 150px;
+            float: left;
+        }
+
+        #div3 {
+            margin:auto;
+            text-align: center;
+            color: black;
+            width: 450px;
+            height: 500px;
+            background-color: ghostwhite;
+            border: 1px solid;
+        }
+
+        .but {
+            padding: 10px 20px; 
+            background-color:cornflowerblue; 
+            border-radius:10px;
+            margin-top: 30px;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px 0;
+            font-size: 36px;
+        }
+
+        h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        select {
+            margin-top:10px;
+            margin-left:40px;
+            padding: 5px;
+            color: green;
+        }
+    </style>
+</head>
+<body  background="vvit.jpg">
+    <div id="div2">
+        <img src="vvitlogo.jpg" style="width:120px;height:120px;">
+    </div>
+    <div id="div1">
+        <center>
+            <h1>Vasireddy Venkatadri Institute of Technology</h1>
+            <h5>Approved by AICTE - Permanently Affiliated to JNTUK - ISO 9001-2015 Certified<br>Accredited by NAAC with 'A'Grade - B.Tech ECE,MECH,CSE,EEE & IT are accredited by NBA</h5>
+        </center>
+    </div>
+    <div>
+        <center>
+            <img src="nba.jpg" style="width:100px;height:100px;">
+            <img src="naac.jpg" style="width:100px;height:100px;">
+        </center>
+        <br>
+        <br>
+        <div id="div3">
+            <center>
+                <h2 align=center style="padding: 20px; text-decoration: underline;">Student FeedBack on Faculty</h2>
+                <form action="Faculty" method="post">
+                    <table align="center">
+                        <tr>
+                            <td>Roll No:</td>
+                            <td><input type="text" name="rnumber" required></td>
+                        </tr>
+                        <tr>
+                       <td>Academic Year:</td>
+                        <td>
+                            <select name="academicyear" id="academicyear" required>
+                                <option >--select--</option>
+                                <option value="2018-2019">2018-2019</option>
+                                <option value="2019-2020">2019-2020</option>
+                                <option value="2021">2020-2021</option>
+                                <option value="2122">2021-2022</option>
+                                <option value="2223">2022-2023</option>
+                                <option value="2324">2023-2024</option>
+                                <option value="2425">2024-2025</option>
+                            </select>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td>Year:</td>
+                            <td>
+                                <select name="year" required>
+                                    <option>--select--</option>
+                                    <option value="4">4</option>
+                                    <option value="3">3</option>
+                                    <option value="2">2</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Semester:</td>
+                            <td>
+                                <select name="sem" required>
+                                    <option>--select--</option>
+                                    <option value="2">2</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Department:</td>
+                            <td>
+                                <select name="branch" required>
+                                    <option>--select--</option>
+                                    <option value="CSE">CSE</option>
+                                    <option value="ECE">ECE</option>
+                                    <option value="CIV">CIVIl</option>
+                                    <option value="ME">MECH</option>
+                                    <option value="EEE">EEE</option>
+                                    <option value="it">IT</option>
+                                    <option value="cic">CIC</option>
+                                    <option value="aid">AID</option>
+                                    <option value="csm">CSM</option>
+                                    <option value="cso">CSO</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                <td><label>Cycle:</label></td>
+                <td><select id="cycle" name="cycle">
+                    <option value="">Select</option>
+                    <option value="cycle1">1</option>
+                    <option value="cycle2">2</option>
+                </select></td></tr>
+                <tr>
+                <td><label>Section:</label></td>
+               <td><select id="section" name="section">
+                    <option value="">Select</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select></td>
+                </tr>
+                        
+                    </table>
+                    <button type="submit" class="but">submit</button>
+                </form>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
